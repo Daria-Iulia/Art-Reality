@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="landscape.png" />
+    <title>Art/Reality</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: #e9ecef;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        max-height: 800px;
+        max-width: 1280px;
+        min-height: 600px;
+        min-width: 1000px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px auto;
+        flex-direction: column;
+        margin-top: 75px;
+      }
+
+      .card {
+        height: 879px;
+        width: 500px;
+
+        border-radius: 10px;
+        transition: background 0.8s;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0 70px 63px -60px #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        position: relative;
+      }
+      .card0 {
+        background: url("2.jpeg") no-repeat;
+        background-size: cover;
+      }
+      .card0:hover {
+        background: url("1.jpeg") no-repeat;
+        background-size: cover;
+        filter: saturate(100%);
+      }
+      .card1 {
+        background: url("3.jpg") no-repeat;
+        background-size: cover;
+      }
+      .card1:hover {
+        background: url("4.jpg") no-repeat;
+        background-size: cover;
+        filter: saturate(100%);
+      }
+
+      .card2 {
+        background: url("5.jpg") no-repeat;
+        background-size: cover;
+      }
+      .card2:hover {
+        background: url("6.jpg") no-repeat;
+        background-size: cover;
+        filter: saturate(100%);
+      }
+    </style>
+    <div class="container">
+      <div class="card card0"></div>
+      <div class="card card1"></div>
+      <div class="card card2"></div>
+    </div>
+  </body>
+</html>
